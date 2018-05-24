@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/cart.css"/>
+		 <link rel="stylesheet" type="text/css" href="../css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="../font/iconfont.css"/>
+	</head>
+	<body>
+		<div class="header"></div>
+		 <div class="main">
+		 <h3>我的购物车</h3>
+		<table class="cart">
+			<thead>
+				<tr>
+					<th><label><input type="checkbox" class="ckall"/>全选</label></th>
+				<!--	<th>序号</th>-->
+					<th>商品</th>
+					<th>详情</th>
+					<th>单价</th>
+					<th>数量</th>
+					<th>小计</th>
+					<th>操作</th>
+				</tr>
+		   </thead>
+		   <tbody class="cart_body"></tbody>
+		   <tfoot>
+		   	  <tr>
+		   	  	<td class="_total">合计</td>
+		   	  	<td colspan=3 class="totalAll">￥0.00</td>
+		   	  	<td colspan=4 >
+		   	  		<div id="jiesuan">
+					共<span class="goods_amount">0</span>件商品
+					<span id="s_jiesuan">去结算</span>
+				</div>	
+		   	  	</td>
+		   	  </tr>
+		   </tfoot>
+		        
+		</table>
+	
+	
+		<div class="footer"></div>
+		
+       <script src="../lib/requirejs/require.js" data-main="../js/cart"></script>
+	    <script type="text/html" id="cartModel">
+		 {{each products prod}}
+		       <tr data-id="{{prod.id}}">
+		       	    <td><input type="checkbox" class="ck_pro"/></td>
+		       	    <td class="bianma" style="display: none;">{{prod.id}}</td>
+					<td><img src="{{prod.img}}" class="img"></td>
+					<td class="desc">{{prod.desc}}</td>
+					<td class="price">{{prod.price}}</td>
+					<td><span class="reduce">-</span><input type="text" value="{{prod.amount}}" class="amount""/><span class="add">+</span></td>
+					<td class="total">{{"￥"+((prod.price.split("￥")[1] * prod.amount).toFixed(2))}}</td>
+					<td><a href="javascript:void(0);" class="delete">删除</a></td>
+				</tr>;
+		 {{/each}}
+		 
+	</script>
+	</body>
+</html>

@@ -1,0 +1,165 @@
+.register_header{
+    
+}
+.register_logo{
+    width: 1000px;
+    height: 110px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.options{
+      width: 1000px;
+      height: 45px;
+      margin: 0 auto;
+
+}
+.options span{
+    display: inline-block;
+    width: 120px;
+    height: 40px;
+    border: 1px solid #CCCCCC;
+    position:absolute;
+    font-size: 12px;
+    text-align: center;
+    line-height: 40px;
+    color:#555555;
+}
+.options span:nth-child(1){
+    top:113px;
+    left:345px;
+    border-bottom: none;
+}
+//去掉下划线
+//.options span:nth-child(1):hover{
+//   background: white; 
+//   height:42px;
+//}
+
+
+.options span:nth-child(2){
+    top:113px;
+    left:490px;
+     border-bottom: none;
+}
+.options span:nth-child(3){
+    top:113px;
+    left:635px;
+     border-bottom: none;
+}
+.options span:nth-child(4){
+    top:113px;
+    right:145px;
+    border:none;
+}
+.options span:nth-child(4) a{color:orange;}
+
+// 表单部分
+  .register_form{
+      width: 1000px;
+      height: 660px;
+      margin: 0 auto;
+      background: lemonchiffon;
+      border:1px solid #CCCCCC;
+      background: url(../imgs/bg-regist.jpg) no-repeat 560px 30px;
+      padding-top: 50px;
+      padding-left: 30px;
+      color:#666666;
+  }
+  
+.register_form h4{
+    color:#333333;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+.register_form p{
+    margin-bottom: 30px;
+    margin-left: 10px;
+    font-size: 12px;
+}
+.register_form p input{
+    margin-left: 45px;
+    width: 300px;
+    height: 25px;
+    font-size: 12px;
+    padding-left: 10px;
+}
+.register_form p:nth-of-type(2) input{
+    width: 120px;
+}
+.register_form p:nth-of-type(2) button{
+    width: 130px;
+    height: 32px;
+    margin-left: 15px;
+    border:1px solid #CCCCCC;
+    background: white;
+}
+
+.register_form p:nth-of-type(3) input{
+    margin-left: 37px;
+}
+.register_form p:nth-of-type(4) input{
+    margin-left: 37px;
+}
+
+.register_form p:nth-of-type(5){
+    margin-left: 72px;
+}
+.register_form p:nth-of-type(6){
+    margin-left: 72px;
+}
+.register_form p:nth-of-type(5) input{
+   width: 15px;
+   height: 15px;
+   margin-right: 5px;
+   position:relative;
+   top:3px;
+}
+.register_form p:nth-of-type(6) input{
+   width: 15px;
+   height: 15px;
+   position:relative;
+   top:3px;
+   margin-right: 5px;
+}
+.register_form a{color:#0098dc;}
+.register_form .zhuce{
+    width: 130px;
+    height: 40px;
+    background: #ff611b;
+    color:white;
+    line-height: 40px;
+    text-align: center;
+    border:none;
+    border-radius: 3px;
+    margin-left: 118px;
+}
+
+// 尾部
+.register_footer{
+    height: 103px;
+}
+
+.register_footer p{ 
+    width: 710px;
+    padding-top: 30px;
+    margin: 0 auto;
+    height: 90px;
+    font-size: 12px;
+    color:#555555;
+    text-align: center;
+    }
+
+ .register_footer p i{
+     color:red;
+     font-size: 27px !important; 
+ }
+   .register_footer p span{
+       font-size:15px;
+   } 
+  
+.register_footer p a{
+    color:#0098dc;
+    } 
+    
+#name_info,#password_info,#s_password_info{color:red;}

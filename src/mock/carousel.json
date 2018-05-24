@@ -1,0 +1,84 @@
+ {
+	"res_code":1,
+	"res_msg":"success",
+	"res_body":{
+		 "banner" :{
+		 	 "imgs" : [
+				{"src":"imgs/banner1.jpg","href":"#"},
+				{"src":"imgs/banner2.jpg", "href":"#"},
+				{"src":"imgs/banner3.jpg", "href":"#"},
+				{"src":"imgs/banner4.jpg", "href":"#"},
+				{"src":"imgs/banner5.jpg", "href":"#"}
+			],
+			
+			"width" : "1260",
+			"height" : "471"
+		 },
+		 
+	  "carousel1" :{
+		 	 "imgs" : [
+				{"src":"imgs/c1_2.jpg","href":"#"},
+				{"src":"imgs/c1_1.jpg", "href":"#"}
+			],
+			"width" : "268",
+			"height" : "288"
+	   },
+	    "lb2" :{
+		 	 "imgs" : [
+				{"src":"imgs/flo1_1.jpg","href":"#"},
+				{"src":"imgs/flo1_2.jpg", "href":"#"},
+				{"src":"imgs/flo1_3.jpg", "href":"#"}
+			],
+			"width" : "295",
+			"height" : "420"
+	   },
+	   "lb3" :{
+		 	 "imgs" : [
+				{"src":"imgs/flo2 (1).jpg","href":"#"},
+				{"src":"imgs/flo2 (2).jpg", "href":"#"},
+				{"src":"imgs/flo2 (3).jpg", "href":"#"}
+			],
+			"width" : "295",
+			"height" : "420"
+	   },
+	   "lb4" :{
+		 	 "imgs" : [
+				{"src":"imgs/flo3 (1).jpg","href":"#"},
+				{"src":"imgs/flo3 (2).jpg", "href":"#"},
+				{"src":"imgs/flo3 (3).jpg", "href":"#"}
+			],
+			"width" : "295",
+			"height" : "420"
+	   },
+	   "lb5" :{
+		 	 "imgs" : [
+				{"src":"imgs/flo4 (1).jpg","href":"#"},
+				{"src":"imgs/flo4 (2).jpg", "href":"#"},
+				{"src":"imgs/flo4 (3).jpg", "href":"#"}
+			],
+			"width" : "295",
+			"height" : "420"
+	   },
+	   "lb6" :{
+		 	 "imgs" : [
+				{"src":"imgs/flo5 (1).jpg","href":"#"},
+				{"src":"imgs/flo5 (2).jpg", "href":"#"},
+				{"src":"imgs/flo5 (3).jpg", "href":"#"}
+			],
+		"width" : "295",
+			"height" : "420"
+	   },
+	   "lb7" :{
+		 	 "imgs" : [
+				{"src":"imgs/flo6 (1).jpg","href":"#"},
+				{"src":"imgs/flo6 (2).jpg", "href":"#"},
+				{"src":"imgs/flo6 (3).jpg", "href":"#"}
+			],
+			"width" : "295",
+			"height" : "420"
+	   }
+	  
+	}
+}
+
+

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/register.css"/>
+	</head>
+	<body>
+		<div class="register_header">
+			<div class="register_logo">
+				<a href="http://localhost:8080/index.html">
+					<img src="../imgs/logo.png"/></a>
+			</div>
+		</div>
+		<div class="options">
+			<span>个人会员</span>
+			<span>万企采集.企业会员</span>
+			<span>合作伙伴</span>
+			<span>我已注册，现在就<a href="http://localhost:8080/html/login.html">登录</a></span>
+		</div>
+		<form  class="register_form">
+			<h4>账户信息</h4>
+			<p>手机/邮箱：<input id="username" type="text" placeholder="请收入手机号/邮箱"/>
+				<span id="name_info"></span>	
+			</p>
+			<p>验&nbsp;&nbsp;证&nbsp;&nbsp;码：<input type="text" placeholder="请输入验证码"/><button disabled="disabled">获取验证码</button></p>
+			
+		    <p>请输入密码：<input id="password" type="password" placeholder="请输入6-20位字符，可使用数字，字母，符号进行组合" />
+		       <span id="password_info"></span>
+		    </p>
+		   
+		    <p>请确认密码：<input id="s_password" type="password" placeholder="请再次输入密码" />
+		       <span id="s_password_info"></span>
+		    </p>
+		     
+		    <p><input type="checkbox" id="ck1"/>我已阅读并同意<a href="#">《礼仪之邦平台服务协议》</a></p>
+		    <p><input type="checkbox" id="ck2"/>我已阅读并同意<a href="#">《礼仪之邦法律声明及隐私权政策》</a></p>
+		     <input type="submit" value="立即注册" class="zhuce" id="submit" />
+		
+		</form>
+		
+    <div class="register_footer">
+		<p>重庆礼仪之邦电子商务有限公司旗下品牌：礼仪之邦集食惠©2009-2020
+	    		<a href="http://www.miibeian.gov.cn" target="_blank">渝ICP备12002277-5号</a>  &nbsp;经营许可证编号: &nbsp;渝B2-20120008
+	    		<br/>
+	                               公司地址：重庆市两江新区星光大道软件园海王星E区 订购及售后服务电话: 
+	           <i class="iconfont icon-dianhua"></i> <span>4000-266-357</span>
+	      </p>
+	</div>
+	<script src="../lib/requirejs/require.js" data-main="../js/register"></script>
+	</body>
+</html>

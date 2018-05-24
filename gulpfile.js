@@ -58,13 +58,20 @@ gulp.task("copy-mock", function(){
 		.pipe(gulp.dest("dist/mock"));
 });
 
-gulp.task("copy", ["copy-lib", "copy-imgs", "copy-mock"]);
+// 复制font
+gulp.task("copy-font", function(){
+	gulp.src("src/font/**/*.*")
+		.pipe(gulp.dest("dist/font"));
+});
+
+gulp.task("copy", ["copy-lib", "copy-imgs", "copy-mock", "copy-font"]);
 
 // 监视任务
 gulp.task("watch", function(){
 	gulp.watch("src/sass/*.scss", ["sass"]);
 	gulp.watch("src/**/*.html", ["html"]);
-	gulp.watch("src/js/*.js", ["js"])
+	gulp.watch("src/js/*.js", ["js"]);
+	gulp.watch("src/mock/*.json", ["json"]);
 });
 
 // 定义默认任务

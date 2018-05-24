@@ -1,0 +1,123 @@
+//处理头部不一样部分
+.allNav ul{
+    display: none !important;
+}
+
+.allNav:hover ul{display: block !important;}
+
+.header_top_left li:nth-child(6){margin-left: 350px !important;}
+.header_top_left li:nth-child(9){display: none;}
+
+.header_top_left li:nth-child(7):hover .s_nav{display: none !important;}
+
+.header_top_left li:nth-child(6):hover img{
+    display: none !important;;
+}
+
+
+.allNav{display: none;}
+
+.logo{border-bottom: none !important;}
+.logo{
+    background: url(../imgs/cart1.png) no-repeat 680px 20px;
+}
+.seacher{display: none;}
+
+//处理尾部不一样的部分
+
+.footer_wrap_top{display: none !important;}
+.footer{background: none !important;}
+
+
+//表格样式
+
+.main{
+    width: 1190px;
+    border:1px solid #CCCCCC;
+    margin: 0 auto;
+    text-align: center;
+    color: #555555;
+}
+.main h3{
+    font-weight: normal;
+    text-align: left;
+    padding-left:20px;
+    font-size: 18px;
+    padding-top:8px;
+    height: 40px;
+    line-height:25px ;
+}
+
+       table {
+             font-size: 14px;
+             width: 1150px;
+               margin: 0 auto;
+                border: 1px solid #CCCCCC;
+                border-collapse: collapse;
+                margin-bottom: 20px;
+                position:relative;
+            }
+       table a{color:#555555;}
+            th {
+//              width: 200px;
+                background: #F7F7F7;
+                text-align: center;
+                font-weight: normal;
+            }
+            th:nth-of-type(1){
+                width: 100px;
+            }
+           th:nth-of-type(3){
+                width: 350px;
+            }
+            tr{
+                border-bottom: 1px solid #CCCCCC;
+            }
+            td img {
+                width: 100px;
+            }
+            td{height:40px;
+              border-right: 0;
+            }
+            td input {
+                width: 35px;
+                height:15px;
+                text-align: center;
+            }
+            
+            .reduce,.add{
+                display: inline-block;
+                cursor: pointer;
+                width: 20px;
+                height:20px;
+                border:1px solid #CCCCCC;
+                background: #EBEBEB;
+            }
+           .reduce:hover,.add:hover{background: orange;} 
+          ._total,.totalAll{
+              background: #E5E5E5;
+              
+              }
+           .totalAll{
+                color:#E2242B;
+               font-size: 22px;
+           } 
+          .total{color:#E2242B;}
+         #jiesuan{
+           background:#E5E5E5;
+         }
+         #s_jiesuan{
+             display: inline-block;
+             width: 90px;
+             height: 50px;
+             line-height: 50px;
+             background:#E2242B ;
+             color:white;
+             font-size: 20px;
+             cursor:pointer;
+         }
+        .goods_amount{
+            color:#E2242B;
+            font-size: 22px;
+            padding:8px;
+        }

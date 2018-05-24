@@ -1,0 +1,33 @@
+         *{margin: 0;padding: 0;}
+			
+	.seam_container{
+				overflow: hidden !important;
+				
+			}
+	  .seam_container .lis{
+				position:relative;
+				overflow: hidden !important;
+			}
+	 .seam_container .lis li{
+				list-style: none;
+				float:left;
+			}
+	.seam_container .is{
+			height: 30px;
+			position: absolute;
+			bottom: 1px;
+			left: 0;
+			text-align: center;
+			}
+	 .seam_container .is i{
+				display: inline-block;
+				width:45px;
+				height: 7px;
+				margin: 5px;
+				border-radius: 3px;
+				background: #FAFAD2;
+			}
+	.seam_container .is i.current{
+		background: red;
+		}
+	

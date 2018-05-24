@@ -1,0 +1,58 @@
+{
+	"res_code":1,
+	"res_msg":"success",
+	"res_body":{
+	  "allNav_son" :[
+		 	        {
+		 	        	"h6":"新鲜蔬果",
+		 	        	"ul":"<li><a href='#'>蔬菜</a></li> <li><a href='#'>水果</a></li>",   	     
+		 	        	"img":"/../../imgs/1gssx.jpg"
+		 	        },
+		 	        {
+		 	        	"h6":"油粮干货",
+		 	        	"ul":"<li><a href='#'>调味品/果酱</a></li> <li><a href='#'>方便速食</a></li>",   	     
+		 	        	"img":"/../../imgs/2lygh.jpg"
+		 	        },
+		 	         {
+		 	        	"h6":"休闲食品",
+		 	        	"ul":"<li><a href='#'>调味品/果酱</a></li> <li><a href='#'>方便速食</a></li>",   	     
+		 	        	"img":"/../../imgs/3xxsp.jpg"
+		 	        },
+		 	         {
+		 	        	"h6":"肉禽蛋奶",
+		 	        	"ul":"<li><a href='#'>调味品/果酱</a></li> <li><a href='#'>方便速食</a></li>",   	     
+		 	        	"img":"/../../imgs/4rcdn.jpg"
+		 	        },
+		 	         {
+		 	        	"h6":"进口食品",
+		 	        	"ul":"<li><a href='#'>调味品/果酱</a></li> <li><a href='#'>方便速食</a></li>",   	     
+		 	        	"img":"/../../imgs/5jksp.jpg"
+		 	        },
+		 	         {
+		 	        	"h6":"酒水茶饮",
+		 	        	"ul":"<li><a href='#'>调味品/果酱</a></li> <li><a href='#'>方便速食</a></li>",   	     
+		 	        	"img":"/../../imgs/6jscy.jpg"
+		 	        },
+		 	         {
+		 	        	"h6":"营养食品",
+		 	        	"ul":"<li><a href='#'>调味品/果酱</a></li> <li><a href='#'>方便速食</a></li>",   	     
+		 	        	"img":"/../../imgs/7yysp.jpg"
+		 	        },
+		 	         {
+		 	        	"h6":"保健品",
+		 	        	"ul":"<li><a href='#'>调味品/果酱</a></li> <li><a href='#'>方便速食</a></li>",   	     
+		 	        	"img":"/../../imgs/8lh.jpg"
+		 	        },
+		 	         {
+		 	        	"h6":"母婴专区",
+		 	        	"ul":"<li><a href='#'>调味品/果酱</a></li> <li><a href='#'>方便速食</a></li>",   	     
+		 	        	"img":"/../../imgs/9myzq.jpg"
+		 	        },
+		 	         {
+		 	        	"h6":"茗茶",
+		 	        	"ul":"<li><a href='#'>调味品/果酱</a></li> <li><a href='#'>方便速食</a></li>",   	     
+		 	        	"img":"/../../imgs/10qt.jpg"
+		 	        }
+		 	        ]  
+		}
+}

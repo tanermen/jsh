@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/order.css"/>
+	    <link rel="stylesheet" type="text/css" href="../font/iconfont.css"/>
+	    <link rel="stylesheet" type="text/css" href="../css/base.css"/>
+	</head>
+	<body>
+		<div class="header"></div>
+		<div class="main">
+			<h5>填写并核对订单信息</h5>
+			<p>收货人信息</p>
+			<p>支付及配送方式<br/>
+				<span>在线支付</span><br/>
+				<span>快递运输</span>
+			</p>
+		 <div class="order_sure">
+			<h3>商品清单<span><a href="http://localhost:8080/html/cart.html">返回购物车修改</a></span></h3>
+		<table class="cart">
+			<thead>
+				<tr>
+					<th>商品</th>
+					<th>详情</th>
+					<th>单价</th>
+					<th>数量</th>
+					<th>小计</th>
+					
+				</tr>
+		   </thead>
+		   <tbody class="cart_body"></tbody>
+		   <tfoot>
+		   	<tr>
+		   		<td colspan=8>
+		   		<h4>备注</h4>
+			  <textarea placeholder="限100字"></textarea>
+			  <h6>提示：请填写有关支付、收货方面的信息</h6>
+		   	</td>
+		   	</tr>
+		   	  <tr>
+		   	  	<td class="_total">合计</td>
+		   	  	<td colspan=3 class="totalAll">￥0.00</td>
+		   	  	<td colspan=4 >
+		   	  		<div id="jiesuan">
+					共<span class="goods_amount">0</span>件商品
+					<span id="s_jiesuan">去支付</span>
+				</div>	
+		   	  	</td>
+		   	  </tr>
+		   </tfoot>
+		</table>
+	  </div>
+	  
+
+	</div>
+		
+		
+		<div class="footer"></div>
+		<script src="../lib/requirejs/require.js" data-main="../js/order"></script>
+	   <script type="text/html" id="cartModel">
+		 {{each order_products prod}}
+		       <tr data-id="{{prod.id}}">
+		       	    <td class="bianma" style="display: none;">{{prod.id}}</td>
+					<td><img src="{{prod.img}}" class="img"></td>
+					<td class="desc">{{prod.desc}}</td>
+					<td class="price">{{prod.price}}</td>
+					<td><span class="amount">{{prod.amount}}</span></td>
+					<td class="total">{{"￥"+((prod.price.split("￥")[1] * prod.amount).toFixed(2))}}</td>
+				</tr>;
+		 {{/each}}
+		 
+	</script>
+	</body>
+</html>
