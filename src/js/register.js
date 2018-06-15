@@ -1,4 +1,4 @@
-require(["config"],function(){
+﻿require(["config"],function(){
 	
 	require(["jquery","cookie"],function($){
 		$(function(){
@@ -45,6 +45,7 @@ require(["config"],function(){
 			  }
           
 	   });   
+
 	   
 		$("#password").focus(function(){
 				 //验证用户名不能为空

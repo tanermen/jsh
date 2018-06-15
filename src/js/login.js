@@ -6,22 +6,17 @@ require(["config"],function(){
 			$.cookie.json = true;
 			var admin = $.cookie("admin");
 	            admin = admin || [];
-	            
-//	         $("#username").blur(function(){
-//	         	var username = $("#username").val();
-//	         	
-//	         });
-	         
+
 	         $("#login").click(function(){
 	         	var username = $("#username").val();
 	         	var password = $("#password").val();
 	         	var index1 = exsit_username(username,admin);
 	         	var index2 = exsit_password(password,admin);
-	         	console.log(username);
-	         	console.log(password);
-	         	console.log(index1,index2);
+	         	// console.log(username);
+	         	// console.log(password);
+	         	// console.log(index1,index2);
 	         	if(index1 == -1 ||index2 == -1){
-	         		console.log(1);
+	         		// console.log(1);
 	         		$("#info").text("用户名或者密码不正确");
 	         		$("#login").attr("disabled",true);
 	         	   }

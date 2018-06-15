@@ -123,7 +123,6 @@ require(["config"],function(){
 //  	   console.log(_id);
 //  	   console.log(typeof(_id));
     	   _idAll = _idAll + "&id=" + _id;
-    	   var index = exsit(_id,products);
 	   	});
 //	   	  console.log(_idAll);
 	   	location.href = "http://localhost:8080/html/order.html?"+_idAll

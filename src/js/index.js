@@ -187,17 +187,13 @@ require(["config"],function(){
          	var _top = $(flo).offset().top;
          	if(_scrollTop >= _top - window.innerHeight/2){
          	   for(var i = 0;i<lis.length;i++){
-         	  $("li:eq("+i+")","#floor_nav").attr({"class":""});
-         	                              
+         	  $("li:eq("+i+")","#floor_nav").attr({"class":""}); 
+            $("li:eq("+i+") .span2","#floor_nav").hide(); 
+            $("li:eq("+i+") .span1","#floor_nav").show(); 
               }
          	 $("li:eq("+index+")","#floor_nav").attr({"class":"current"});
-//       	 console.log( $(this));
-//       	   if($(this).hasClass("current")){
-//       	   	
-//       	   	   $(this).text($(flos[index]).children("h2").text())
-//       	        .css({"font-size":"12px"});   
-//       	   }
-
+            $("li:eq("+index+") .span2","#floor_nav").show();
+            $("li:eq("+index+") .span1","#floor_nav").hide();
          	}
          });
 

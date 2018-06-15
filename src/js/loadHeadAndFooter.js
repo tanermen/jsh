@@ -1,5 +1,5 @@
 
-define(["jquery"],function($){
+define(["jquery","cookie"],function($){
 	
 	 $(function(){
 	 	$(".header").load("/html/include/header.html",function(){
@@ -9,12 +9,19 @@ define(["jquery"],function($){
 	 	   $(".er_nav").mouseleave(function(){
 	 			$(".b_nav").css({display:"none"});
 	 		});
-	 
+	     
 	    //将登录改成具体的用户名名称
+      $.cookie.json = true;
+      var admin = $.cookie("admin");
+          admin = admin || [];
+
 	    var username = location.search;
-            var arr = username.split("=");
-            if(arr[1]){
-            	$("#login").text("您好 "+arr[1]).attr("href","#");
+       var index1 = username.indexOf("&");
+        var arr = username.split("=");
+            if(arr[1]&&index1==-1){
+              var index = exsit_username(arr[1],admin);
+            	$("#login").text("您好 "+admin[index].username).attr("href","#");
+
             }else{
             	$("#login").text("登录");
             }
@@ -98,6 +105,15 @@ define(["jquery"],function($){
             	 $(".allNav_son").css({display:"none"});
             });
 
+          //判断cookie中是否存在用户名
+        function exsit_username(user, admin){
+              for(var i =0;i<admin.length;i++){
+              if(user==admin[i].username){
+              return i;
+              }
+            }
+            return -1;
+          }  
 	 	});
 	 });
 	 	$(".footer").load("/html/include/footer.html");

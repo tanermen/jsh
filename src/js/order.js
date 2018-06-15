@@ -39,7 +39,6 @@ require(["config"],function(){
 		    
 	 }
 	  $(".totalAll").text("￥"+money .toFixed(2));
-	 
 	   $(".goods_amount").text(amount);
 	  // 封装函数，加入购物车时cookie中是否已经存在该商品
 	function exsit(id, products){
